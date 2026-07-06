@@ -130,6 +130,312 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "apollo-io-pricing-explained",
+    title: "Apollo.io Pricing Explained: What You Actually Pay Per Seat Over Time",
+    description:
+      "A breakdown of how Apollo's credit and seat-based pricing scales as your team grows, and what the real three-year cost looks like.",
+    category: "Pricing",
+    date: "2026-07-05",
+    readingTime: "5 min read",
+    sections: [
+      {
+        paragraphs: [
+          "Apollo.io's pricing page looks simple until you start adding seats and credits together. The advertised per-user price is only part of the bill — the other part is the credit system that governs how many contacts you can actually enrich or export each month, and that's where most teams get surprised.",
+        ],
+      },
+      {
+        heading: "Seats scale linearly, credits scale with usage",
+        paragraphs: [
+          "Every additional rep on a plan multiplies the seat cost, and every enrichment or export draws down a shared or per-seat credit pool. A team that goes from 3 to 8 reps isn't just paying more seats — they're usually also forced up a plan tier because the credit allotment at the lower tier no longer covers 8 people prospecting daily.",
+        ],
+      },
+      {
+        heading: "What a 3-year projection actually looks like",
+        list: [
+          "Year 1: modest team, modest bill, feels reasonable",
+          "Year 2: team grows, tier upgrade forced by credit limits, not by need for new features",
+          "Year 3: credit overage charges become a recurring line item as outreach volume increases",
+        ],
+      },
+      {
+        heading: "Where the cost actually comes from",
+        paragraphs: [
+          "None of this is unique to Apollo — it's how nearly every credit-metered SaaS enrichment tool is built, because metering usage is how the vendor keeps margin as their own data costs scale. The pricing isn't unfair, it's just structurally designed to grow with your team rather than staying flat.",
+        ],
+      },
+      {
+        heading: "The alternative framing",
+        paragraphs: [
+          "If your team's enrichment volume is predictable and your headcount is stable, a per-seat SaaS tool can be the right, lower-effort choice. If your team is growing fast or your enrichment volume is spiky, a flat one-time-cost, self-hosted tool changes the math entirely — the fifth seat costs the same as the first.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "clearbit-alternatives-for-startups",
+    title: "Clearbit Alternatives for Startups on a Tight Budget",
+    description:
+      "Clearbit's enterprise pricing prices out most early-stage startups. Here's how to think about which alternative actually fits a small team.",
+    category: "Guide",
+    date: "2026-07-04",
+    readingTime: "6 min read",
+    sections: [
+      {
+        paragraphs: [
+          "Clearbit (now part of HubSpot's Breeze Intelligence) is built for mid-market and enterprise buyers, and its pricing reflects that. For a two-person founding team trying to enrich a few hundred leads a month, it's often simply the wrong tool for the budget — not because it's bad, but because it's solving a different problem at a different scale.",
+        ],
+      },
+      {
+        heading: "What early-stage teams actually need",
+        list: [
+          "Company and contact enrichment for a few hundred to a few thousand records a month, not millions",
+          "A predictable, capped cost — not a metered bill that grows with experimentation",
+          "Enough data accuracy to run outreach, without needing enterprise-grade firmographic depth",
+        ],
+      },
+      {
+        heading: "The three realistic categories of alternative",
+        paragraphs: [
+          "Freemium SaaS tools (generous free tiers, but caps that a growing startup outgrows within months). Mid-market SaaS competitors (cheaper than Clearbit but still per-seat, still recurring). Self-hosted / source-available tools (a flat one-time cost, no seat multiplier, but you run the infrastructure yourself).",
+        ],
+      },
+      {
+        heading: "The real question to ask",
+        paragraphs: [
+          "It's not 'which tool has the most data' — it's 'which pricing model matches how my costs need to behave over the next two years.' A startup pre-product-market-fit benefits enormously from a flat, one-time cost because the alternative is a recurring bill that compounds during the exact period when cash is tightest.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "how-lead-scoring-actually-works",
+    title: "How Lead Scoring Actually Works: A Practical Breakdown",
+    description:
+      "What's really happening behind a lead score — the signals that matter, the ones that are noise, and why black-box scores are hard to trust.",
+    category: "Guide",
+    date: "2026-07-03",
+    readingTime: "5 min read",
+    sections: [
+      {
+        paragraphs: [
+          "Most B2B tools show a lead score as a single number, with no explanation of what produced it. That's useful for a quick glance, but it makes the score impossible to trust or tune — you can't fix what you can't see.",
+        ],
+      },
+      {
+        heading: "The signals that typically drive a score",
+        list: [
+          "Domain and firmographic match against your ideal customer profile (industry, size, tech stack)",
+          "Contact-level completeness — do you have a verified email, a real name, a role title",
+          "Email deliverability confidence — a pattern-matched guess scores differently than an SMTP-verified address",
+          "Page/content signals — does the company's own site indicate active buying intent for your category",
+          "Recency — how fresh is the underlying data",
+        ],
+      },
+      {
+        heading: "Why weighting matters more than the signals themselves",
+        paragraphs: [
+          "Two companies can have identical raw signals and wildly different 'correct' scores depending on what actually matters for your specific product. A tool that lets you see and adjust the weight given to each signal produces scores you can actually act on. A tool that hides the weighting gives you a number to glance at, not a system to run outreach on.",
+        ],
+      },
+      {
+        heading: "A practical gut check",
+        paragraphs: [
+          "If your current tool's score has ever surprised you in a way you couldn't explain, that's a sign the scoring logic is a black box rather than a configurable model — worth factoring in the next time you evaluate a lead enrichment tool.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "hunter-io-vs-self-hosted-email-finders",
+    title: "Hunter.io vs Self-Hosted Email Finders: Which Actually Fits Your Workflow",
+    description:
+      "Hunter.io is fast and simple for one-off lookups. Here's when a self-hosted email finder makes more sense instead.",
+    category: "Comparison",
+    date: "2026-07-02",
+    readingTime: "5 min read",
+    sections: [
+      {
+        paragraphs: [
+          "Hunter.io built its reputation on being the fastest way to find a single email address for a single domain. That's genuinely useful for occasional lookups. It's a different question when the task shifts from 'find one email' to 'systematically enrich and verify a growing pipeline every week.'",
+        ],
+      },
+      {
+        heading: "Where a lookup tool like Hunter fits well",
+        paragraphs: [
+          "Ad-hoc research, checking a specific person's email before a warm intro, or low-volume prospecting where a credit-based monthly cap is more than enough. The simplicity is the feature.",
+        ],
+      },
+      {
+        heading: "Where it starts to strain",
+        list: [
+          "Recurring, high-volume enrichment where credit costs scale with pipeline size, not team size",
+          "Wanting the raw crawl and verification logic auditable rather than a black-box API response",
+          "Needing the enrichment pipeline to run on a schedule against your own lead lists automatically",
+        ],
+      },
+      {
+        heading: "The self-hosted tradeoff",
+        paragraphs: [
+          "A self-hosted email discovery and verification tool trades the convenience of an instant hosted API for full control of the crawling and verification logic, no per-lookup credit cost, and data that never leaves your own server. That's a better fit once the workflow is 'a pipeline running continuously,' not 'a lookup done occasionally.'",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "gdpr-b2b-cold-email-2026",
+    title: "GDPR and B2B Cold Email: What's Actually Legal in 2026",
+    description:
+      "A practical, non-legal-advice overview of how GDPR and similar regulations apply to scraped B2B contact data and cold outreach.",
+    category: "Guide",
+    date: "2026-07-01",
+    readingTime: "6 min read",
+    sections: [
+      {
+        paragraphs: [
+          "GDPR doesn't ban B2B cold email outright, but it does require a lawful basis for processing personal data — and a business email tied to a named individual counts as personal data under the regulation, even though it's a work address.",
+        ],
+      },
+      {
+        heading: "The 'legitimate interest' basis most B2B outreach relies on",
+        paragraphs: [
+          "Most legitimate B2B cold outreach in the EU relies on 'legitimate interest' as the lawful basis, which generally requires that the outreach is relevant to the recipient's professional role, that you can identify yourself clearly, and that you provide an easy, honored opt-out.",
+        ],
+      },
+      {
+        heading: "Practical requirements this creates",
+        list: [
+          "Clear sender identification — no disguised or spoofed sending identity",
+          "An easy, functioning unsubscribe or opt-out mechanism, honored promptly",
+          "Relevance — outreach genuinely tied to the recipient's professional role, not a mass irrelevant blast",
+          "A record of where the contact data came from, in case of a data subject access request",
+        ],
+      },
+      {
+        heading: "Where scraped data adds extra risk",
+        paragraphs: [
+          "Bulk-scraped contact lists with no consent trail and no clear opt-out process are the highest-risk pattern under GDPR enforcement, regardless of which tool generated the list. The tool matters less than the process wrapped around how the data is used afterward.",
+        ],
+      },
+      {
+        heading: "The honest caveat",
+        paragraphs: [
+          "This is general information, not legal advice, and enforcement details vary by EU member state and continue to evolve. If cold outreach into the EU is a meaningful part of your go-to-market, a short consult with counsel familiar with GDPR is worth the cost before scaling volume.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "one-time-payment-vs-subscription-software",
+    title: "One-Time Payment vs Subscription Software: The Real Three-Year Math",
+    description:
+      "Why a higher upfront price on a one-time-purchase tool often beats a 'cheaper' monthly subscription once you run the actual numbers.",
+    category: "Guide",
+    date: "2026-06-30",
+    readingTime: "4 min read",
+    sections: [
+      {
+        paragraphs: [
+          "A $199 one-time purchase looks expensive next to a $29/month subscription — until you multiply the subscription out. $29/month is $1,044 over three years, before a single price increase or seat addition. The framing of 'cheap monthly' versus 'expensive upfront' inverts almost every time you extend the time horizon past a year.",
+        ],
+      },
+      {
+        heading: "What subscriptions are actually pricing in",
+        paragraphs: [
+          "Hosting, ongoing feature development, and support are real costs, and subscription pricing reflects them fairly for tools that need constant vendor maintenance. The comparison only favors one-time pricing when the tool doesn't require that ongoing vendor relationship — for example, software you're comfortable self-hosting and maintaining yourself.",
+        ],
+      },
+      {
+        heading: "The seat-multiplier problem",
+        paragraphs: [
+          "The bigger gap shows up with team size. A per-seat subscription multiplies every month by headcount. A one-time license, especially one without a seat cap, doesn't — the tenth teammate costs the business nothing additional.",
+        ],
+      },
+      {
+        heading: "When subscription still wins",
+        paragraphs: [
+          "If you want zero infrastructure responsibility, guaranteed uptime SLAs, and continuous new features shipped without any effort on your part, a subscription is the more sensible trade even at a higher lifetime cost. One-time-purchase software asks you to take on the maintenance the subscription price was paying someone else to handle.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "build-b2b-lead-database-without-buying-one",
+    title: "How to Build a B2B Lead Database Without Buying One",
+    description:
+      "A practical breakdown of building your own company and contact database from public sources instead of paying for access to someone else's.",
+    category: "Guide",
+    date: "2026-06-29",
+    readingTime: "6 min read",
+    sections: [
+      {
+        paragraphs: [
+          "Most B2B lead databases sold today are aggregations of public information — company websites, public directories, job postings, and press releases — repackaged behind a subscription. There's nothing wrong with paying for that convenience, but it's worth knowing the underlying data is mostly public and buildable.",
+        ],
+      },
+      {
+        heading: "The core pipeline",
+        list: [
+          "Company discovery — identifying target companies from directories, industry lists, or your own ICP criteria",
+          "Website crawling — pulling public pages (team, about, contact) from each company's own site",
+          "Contact extraction — pattern-matching and parsing names, roles, and emails from those pages",
+          "Verification — confirming extracted emails are actually deliverable before they enter your pipeline",
+          "Scoring — ranking the resulting contacts against your ICP so reps prioritize the right ones first",
+        ],
+      },
+      {
+        heading: "Why most teams don't do this themselves",
+        paragraphs: [
+          "Each step above is straightforward individually, but building and maintaining the crawling, verification, and scoring infrastructure end-to-end takes real engineering time — which is exactly what a paid tool is selling you: the pipeline already built, not data you couldn't otherwise get.",
+        ],
+      },
+      {
+        heading: "The middle ground",
+        paragraphs: [
+          "A self-hosted, source-available tool gives you the built pipeline without the recurring subscription — you're paying once for the engineering work, then running it on infrastructure you control, rather than renting continuous access to someone else's version of the same pipeline.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "docker-self-hosted-saas-alternatives-2026",
+    title: "Docker-Based Self-Hosted SaaS Alternatives Worth Knowing in 2026",
+    description:
+      "A look at the broader trend of self-hosted, Docker-deployable alternatives to subscription SaaS, and where lead enrichment fits in.",
+    category: "Guide",
+    date: "2026-06-28",
+    readingTime: "5 min read",
+    sections: [
+      {
+        paragraphs: [
+          "Self-hosting used to mean a niche audience of sysadmins running their own email or file storage. Docker changed that — a tool that ships as a container is deployable by anyone comfortable running one command, not just infrastructure specialists.",
+        ],
+      },
+      {
+        heading: "Why this trend is growing",
+        list: [
+          "Rising SaaS fatigue as teams add up how many recurring subscriptions they're actually paying for",
+          "Increasing comfort with Docker and VPS hosting among smaller technical teams",
+          "Data ownership concerns — not wanting sensitive business data (leads, financials, customer records) sitting on a third party's servers indefinitely",
+          "One-time-cost pricing being a better fit for cash-conscious early-stage companies",
+        ],
+      },
+      {
+        heading: "Where lead enrichment fits into this trend",
+        paragraphs: [
+          "B2B lead and company data is exactly the kind of sensitive pipeline information teams are increasingly uneasy handing to a third-party SaaS indefinitely — it's your entire prospect list and outreach history. A Docker-deployable, self-hosted enrichment tool applies the same self-hosting logic that's already normalized for tools like analytics, uptime monitoring, and internal dashboards.",
+        ],
+      },
+      {
+        heading: "What to check before self-hosting anything",
+        list: [
+          "Does it ship full source code, or just a container with a closed binary inside",
+          "Can it run fully offline from the vendor, or does it still call a hosted API for core functionality",
+          "Is there a real one-time cost, or is 'self-hosted' just a wrapper around the same subscription",
+        ],
+      },
+    ],
+  },
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
