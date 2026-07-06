@@ -1,8 +1,9 @@
 // components/landing/VideoDemo.tsx
-// Uses the native <video> element with controls — zero client JS needed
-// for play/pause, which keeps this a pure Server Component.
 import { site } from "@/lib/data/content";
-import { PlayIcon } from "./icons";
+
+// Replace YOUR_VIDEO_ID with the ID from your unlisted YouTube video URL
+// e.g. https://www.youtube.com/watch?v=dQw4w9WgXcQ -> ID is "dQw4w9WgXcQ"
+const YOUTUBE_VIDEO_ID = "1NCyps2bgTk";
 
 export default function VideoDemo() {
   return (
@@ -14,19 +15,14 @@ export default function VideoDemo() {
         </h2>
 
         <div className="relative mx-auto mt-10 aspect-video w-full overflow-hidden rounded-xl border border-border bg-surface">
-          <video
-            className="h-full w-full object-cover"
-            poster="/screenshots/demo-poster.png"
-            controls
-            preload="none"
-          >
-            <source src="/demo/enrichly-demo.mp4" type="video/mp4" />
-          </video>
-          <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-black/20">
-            <span className="flex h-16 w-16 items-center justify-center rounded-full bg-amber text-bg">
-              <PlayIcon />
-            </span>
-          </div>
+          <iframe
+            className="h-full w-full"
+            src={`https://www.youtube.com/watch?v=${YOUTUBE_VIDEO_ID}`}
+            title="Enrichly product demo"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          />
         </div>
 
         <a
