@@ -29,6 +29,9 @@ export const metadata: Metadata = {
     },
     description:
         "Enrichly is a self-hosted B2B lead discovery and enrichment platform. Discover companies, crawl websites, extract verified business emails, score leads, and export CSVs — no subscription, full source code, one-time payment.",
+    verification: {
+        google: "google-site-verification=FVqNsi6sO8LESNsqc03VoYv5HokJvHF8VjN07fICjJY",
+    },
 };
 
 export default function RootLayout({
