@@ -8,11 +8,11 @@ export const site = {
   tagline: "Self-Hosted B2B Lead Discovery & Enrichment Platform",
   // TODO: after your first Vercel deploy, replace this with the exact URL Vercel
   // gives you (Project → Settings → Domains), e.g. "https://enrichly.vercel.app"
-  domain: "https://REPLACE_WITH_YOUR_VERCEL_DOMAIN.vercel.app",
+  domain: "https://enrichyweb.vercel.app",
   description:
     "Enrichly is a self-hosted Apollo alternative for discovering companies, crawling their websites, extracting verified business emails, and scoring lead quality — with full source code, no subscription, no seat limits.",
   price: "199",
-  gumroadUrl: "#GUMROAD_URL_PLACEHOLDER",
+  gumroadUrl: "https://imranite71.gumroad.com/l/iirtky",
 };
 
 export const nav = [

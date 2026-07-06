@@ -19,7 +19,7 @@ export default function ContactPage() {
       </p>
 
       <a
-        href="mailto:support@enrichly.dev"
+        href="mailto:mubashirahmed1425@gmail.com"
         className="mt-8 inline-block rounded-md bg-amber px-6 py-3 text-sm font-semibold text-bg transition-opacity hover:opacity-90"
       >
         support@enrichly.dev
