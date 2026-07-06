@@ -17,7 +17,7 @@ export default function VideoDemo() {
         <div className="relative mx-auto mt-10 aspect-video w-full overflow-hidden rounded-xl border border-border bg-surface">
           <iframe
             className="h-full w-full"
-            src={`https://www.youtube.com/watch?v=${YOUTUBE_VIDEO_ID}`}
+            src={`https://www.youtube.com/embed/${YOUTUBE_VIDEO_ID}`}
             title="Enrichly product demo"
             loading="lazy"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
