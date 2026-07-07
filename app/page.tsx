@@ -4,7 +4,6 @@ import { site } from "@/lib/data/content";
 import {
   softwareApplicationJsonLd,
   organizationJsonLd,
-  productJsonLd,
   faqJsonLd,
   breadcrumbJsonLd,
 } from "@/lib/seo/jsonld";
@@ -66,10 +65,6 @@ export default function HomePage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd()) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(productJsonLd()) }}
       />
       <script
         type="application/ld+json"

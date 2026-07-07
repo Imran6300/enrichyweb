@@ -34,26 +34,6 @@ export function organizationJsonLd() {
   };
 }
 
-export function productJsonLd() {
-  return {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    name: site.name,
-    description: site.description,
-    brand: {
-      "@type": "Brand",
-      name: site.name,
-    },
-    offers: {
-      "@type": "Offer",
-      price: site.price,
-      priceCurrency: "USD",
-      availability: "https://schema.org/InStock",
-      url: site.gumroadUrl,
-    },
-  };
-}
-
 export function faqJsonLd() {
   return {
     "@context": "https://schema.org",
