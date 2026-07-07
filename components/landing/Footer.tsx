@@ -12,6 +12,8 @@ export default function Footer() {
         <nav className="flex items-center gap-6" aria-label="Footer">
           <Link href="/blog" className="hover:text-text">Blog</Link>
           <Link href="/compare" className="hover:text-text">Compare</Link>
+          <Link href="/for" className="hover:text-text">Solutions</Link>
+          <Link href="/glossary" className="hover:text-text">Glossary</Link>
           <Link href="/privacy" className="hover:text-text">Privacy Policy</Link>
           <Link href="/terms" className="hover:text-text">Terms</Link>
           <Link href="/contact" className="hover:text-text">Contact</Link>
